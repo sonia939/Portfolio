@@ -604,7 +604,28 @@
             background-color: var(--olive-green);
             transform: rotate(15deg);
         }
-        
+        /* Responsive Contact Form Buttons */
+@media (max-width: 767.98px) {
+    .contact-form .btn-custom,
+    .contact-form .btn-outline-custom {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .contact-form .d-flex {
+        flex-direction: column;
+    }
+    
+    .contact-form .gap-3 {
+        gap: 10px !important;
+    }
+}
+
+/* Button hover effects */
+.btn-custom:hover, .btn-outline-custom:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3) !important;
+}
         /* Footer */
         footer {
             background-color: var(--dark-gray-green);
